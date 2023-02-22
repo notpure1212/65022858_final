@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border: solid; height: 420px;width: 400px;flex-direction: row; background-color: wheat;margin: 0 auto;">
+            <h3 style="margin-left: 150px;">Insert Data</h3>
+            <label style="margin-left: 10px;" id="">Name</label><br>
+            <input id="name" style="margin-left: 20px;width: 350px;height: 25px;" type="text"><br><br>
+
+            <label style="margin-left: 10px;" id="">Surname</label><br>
+            <input id="surname" style="margin-left: 20px;width: 350px;height: 25px;" type="text"><br><br>
+            
+
+            <label for="" style="margin-left: 10px;">Gender</label>
+            <select style="margin-left: 20px;width: 350px;height: 25px;" name="" id="menu" onchange="selectgender()">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Complicate">Complicate</option>
+            </select><br><br>
+            
+            
+            <label style="margin-left: 10px;" id="Date">Date of birth</label><br>
+            <input style="margin-left: 20px;width: 350px;height: 25px;" type="date" id="dateinfo"><br><br><br>
+
+
+
+            <button onclick="publishtotable()">Add</button>
+    </div><br><br>
+
+    
+    <div id="tables">
+        <table id="table" style="width: 100%;">
+        <tr>
+            <th style="border: solid;">Name</th>
+            <th style="border: solid;">Surname</th>
+            <th style="border: solid;">Gender</th>
+            <th style="border: solid;">Date of birth</th>
+        </tr>
+    </table>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
