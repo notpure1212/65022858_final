@@ -5,14 +5,21 @@ function selectgender() {
 }
 
 
-function publishtotable(){
-    tableelement = document.getElementById('table');
+function publishToTable() {
     const name = document.getElementById('name').value;
-    const trelement = document.createElement('tr');
-    const tbodyelement = document.createElement('tbode');
-    const nameele = document.createElement('td')
-    nameele.innerHTML=name;
-    trelement.appendChild(nameele);
-    tbodyelement.appendChild(trelement);
-    tableelement.appendChild(tbodyelement);
+    const surname = document.getElementById('surname').value;
+    const error = document.getElementById('error');
+    if (name && email) {
+        const tableElement = document.getElementById('table');
+        const trElement = document.createElement('tr');
+        const tbodyElement = document.createElement('tbody');
+        const nameEle = document.createElement('td');
+        const surnameEle = document.createElement('td');
+        nameEle.innerHTML = name;
+        surnameEle.innerHTML = surname;
+        trElement.appendChild(nameEle);
+        trElement.appendChild(emailEle);
+        tbodyElement.appendChild(trElement);
+        tableElement.appendChild(tbodyElement);
+    }
 }
